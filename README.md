@@ -22,6 +22,8 @@ npm run dev
 ```
 The server will be running at http://localhost:5000.
 
+If you prefer to access the server remotely, it is available [here](https://med-backend-rapb.onrender.com).
+
 ## Usage
 
 Use the API endpoints to interact with pharmacies and medicines.

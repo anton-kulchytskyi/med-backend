@@ -12,7 +12,7 @@ connectDB();
 app.use(express.json());
 app.use(cors());
 
-// Додайте маршрути аптек та ліків
+
 app.use('/pharmacies', pharmacyRoutes);
 app.use('/medicines', medicineRoutes);
 

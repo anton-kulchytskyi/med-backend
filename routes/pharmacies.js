@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Pharmacy = require('../models/pharmacy');
 
-// Отримання всіх аптек
 router.get('/', async (req, res) => {
   try {
     const pharmacies = await Pharmacy.find();
@@ -13,7 +12,6 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Отримання конкретної аптеки за ідентифікатором
 router.get('/:pharmacyId', async (req, res) => {
   try {
     const { pharmacyId } = req.params;
