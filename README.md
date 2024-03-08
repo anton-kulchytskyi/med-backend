@@ -20,7 +20,11 @@ cd med-backend
 npm install
 npm run dev
 ```
-The server will be running at http://localhost:5000.
+The server will be running at http://localhost:5000. In this case, please create a file named .env and add the following content to it:
+
+```
+MONGO_URI=mongodb+srv://antek1809:Xs6ZG1KOWR6CFPq6@cluster0.xb3fubx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0;
+```
 
 If you prefer to access the server remotely, it is available [here](https://med-backend-rapb.onrender.com).
 
@@ -30,8 +34,15 @@ Use the API endpoints to interact with pharmacies and medicines.
 
 - View all pharmacies: `GET /pharmacies`
 - View a specific pharmacy: `GET /pharmacies/:pharmacyId`
+
 - View all medicines: `GET /medicines`
 - View a specific medicine: `GET /medicines/:medicineId`
+
+- View all users: `GET /users`
+- View a specific user: `GET /users/:userId`
+
+- View all orders: `GET /orders`
+- View a specific order: `GET /orders/:orderId`
 
 ## Contributing
 
