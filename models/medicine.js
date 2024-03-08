@@ -14,8 +14,12 @@ const medicineSchema = new mongoose.Schema({
     default: Date.now,
   },
   likes: {
-    type: Number,
-    default: 0,
+    type: Boolean,
+    default: false,
+  },
+  pharmacyId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Pharmacy",
   },
 });
 
